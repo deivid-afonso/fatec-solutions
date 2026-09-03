@@ -61,38 +61,6 @@ O projeto está sendo desenvolvido de forma multidisciplinar, unindo conheciment
 
 ---
 
-## ⚙️ Funcionalidades
-
-### 🌐 Landing Page
-
-* [x] Apresentação institucional da Fatec Solutions;
-* [x] Apresentação da proposta de solução;
-* [x] Design responsivo para diferentes dispositivos;
-* [x] Navegação adaptada para dispositivos móveis;
-* [x] Contraste reforçado para melhorar a acessibilidade;
-* [x] Ajuste de tamanho do texto;
-* [x] Opção de redução de movimento;
-* [x] Favicon personalizado;
-* [x] Metadados básicos para compartilhamento.
-
-### 📋 Proposta da Solução
-
-* [x] Centralização das informações de controle de qualidade;
-* [x] Digitalização dos registros;
-* [x] Redução do uso de documentos físicos;
-* [x] Cadastro e rastreabilidade de lotes;
-* [x] Organização das informações;
-* [x] Facilitação do acompanhamento dos processos.
-
-### 📩 Contato
-
-* [x] Formulário de contato;
-* [x] Preparação automática de mensagem para WhatsApp;
-* [x] Preparação automática de mensagem para e-mail;
-* [x] Não armazenamento dos dados enviados pelo formulário.
-
----
-
 ## 🎨 Layout
 
 ![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%201%20.png)

@@ -1,92 +1,196 @@
-# Fatec Solutions
+<h1 align="center"> 
+	🚧 Fatec Solutions - Em construção 🚧
+</h1>
 
-Landing page institucional estática da Fatec Solutions. O projeto foi construído sem dependências, compilação ou serviços externos: basta abrir ou publicar os arquivos.
+<p align="center">
+  <strong>Solução tecnológica para centralização e digitalização do controle de qualidade na indústria automotiva.</strong>
+</p>
 
-## O que está incluído
+---
 
-- Design responsivo com linguagem visual de tecnologia.
-- Navegação mobile, contraste reforçado, ajuste de tamanho de texto e opção de reduzir movimento.
-- Formulário que prepara uma mensagem no WhatsApp ou e-mail; o site não armazena dados.
-- Favicon próprio e metadados básicos para compartilhamento.
-- Publicação automática no GitHub Pages por GitHub Actions.
+<p align="center">
+ <a href="#-descrição-do-entregável">Descrição do Entregável</a> •
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-publicação">Publicação</a> •
+ <a href="#-autor">Autor</a> •
+ <a href="#-licença">Licença</a>
+</p>
 
-## Estrutura
+---
+
+## 📄 Descrição do entregável
+
+O **Fatec Solutions** é uma solução tecnológica desenvolvida durante o **Desafio de Ideias**, uma iniciativa realizada em parceria entre o **SENAI Diadema** e a **FATEC Diadema**.
+
+O projeto tem como objetivo desenvolver uma solução para a **indústria automotiva**, buscando tornar os processos de controle de qualidade mais organizados, rastreáveis, digitais e eficientes.
+
+Entre os principais pontos trabalhados estão:
+
+* Centralização das informações de controle de qualidade;
+* Redução e eliminação do uso de documentos em papel;
+* Cadastro e rastreabilidade de lotes;
+* Organização das informações relacionadas à produção;
+* Facilitação do acompanhamento dos processos de qualidade;
+* Maior controle sobre registros e ocorrências;
+* Digitalização de processos realizados manualmente.
+---
+
+## 💻 Sobre o projeto
+
+O **Fatec Solutions** surgiu a partir do desafio de identificar problemas presentes no ambiente industrial e propor uma solução tecnológica capaz de gerar melhorias reais para os processos de uma empresa do setor automotivo.
+
+Durante o desenvolvimento do projeto, foram identificadas necessidades relacionadas ao **controle de qualidade, organização de informações, rastreabilidade e utilização excessiva de documentos físicos**.
+
+A proposta do Fatec Solutions é contribuir para a transformação desses processos por meio da **centralização e digitalização das informações**, permitindo que os dados sejam registrados e acompanhados de forma mais organizada.
+
+A solução busca proporcionar:
+
+* 📊 Maior organização das informações;
+* 🔎 Rastreabilidade dos processos e lotes;
+* 📋 Centralização dos registros de qualidade;
+* ♻️ Redução do uso de papel;
+* ⏱️ Agilidade no acesso às informações;
+* 🔐 Maior controle dos dados;
+* 🚗 Aplicação voltada para o contexto da indústria automotiva.
+
+O projeto está sendo desenvolvido de forma multidisciplinar, unindo conhecimentos de **tecnologia, processos, qualidade e experiência do usuário**.
+
+---
+
+## 🎨 Layout
+
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%201%20.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%202.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%203.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%204.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%205.png)
+
+---
+
+## 🚀 Como executar o projeto
+
+O projeto é uma landing page estática e **não possui dependências ou processos de compilação obrigatórios**.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/thaisferreira-moura/fatec-solutions.git
+```
+
+### 2. Acesse a pasta
+
+```bash
+cd fatec-solutions
+```
+
+### 3. Execute o projeto
+
+Como o projeto utiliza HTML, CSS e JavaScript puro, basta abrir o arquivo:
 
 ```text
-fatec-solutions/
-├── .github/workflows/deploy-pages.yml  # deploy automático
-├── .gitignore
-├── favicon.svg
-├── index.html                           # site completo
-├── ORACLE-CLOUD.md
-└── README.md
+index.html
 ```
 
-## Publicar no GitHub Pages — passo a passo
+em um navegador moderno.
 
-### 1. Criar o repositório
+Também é possível utilizar o **Live Server** no VS Code para facilitar o desenvolvimento.
 
-1. Entre em [github.com/new](https://github.com/new).
-2. Defina o nome, por exemplo, `fatec-solutions`.
-3. Escolha **Public** se quiser que o site seja acessível no plano gratuito.
-4. Não marque a criação de README, `.gitignore` ou licença: eles já estão nesta pasta.
-5. Clique em **Create repository**.
+---
 
-### 2. Enviar os arquivos
+## 📌 Pré-requisitos
 
-No computador, abra um terminal dentro desta pasta e execute os comandos abaixo. Troque `SEU-USUARIO` pelo seu nome de usuário do GitHub e use a URL mostrada na página do repositório caso seja diferente.
+Antes de começar, você vai precisar ter instalado em sua máquina:
 
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "feat: publicar site Fatec Solutions"
-git remote add origin https://github.com/SEU-USUARIO/fatec-solutions.git
-git push -u origin main
-```
+* [Git](https://git-scm.com)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-> Alternativa sem terminal: no repositório vazio, use **Add file → Upload files** e arraste o conteúdo desta pasta, inclusive a pasta `.github`.
+Não é necessário instalar **Node.js**, executar `npm install` ou configurar um servidor para visualizar a versão local do projeto.
 
-### 3. Ativar o GitHub Pages
+---
 
-1. No repositório, abra **Settings → Pages**.
-2. Em **Build and deployment**, selecione **GitHub Actions** como fonte.
-3. Abra a aba **Actions**. O fluxo **Deploy GitHub Pages** deve iniciar após o envio para `main`.
-4. Ao terminar (ícone verde), volte a **Settings → Pages** para ver a URL pública.
+## 🛠 Tecnologias
 
-O endereço normalmente será `https://SEU-USUARIO.github.io/fatec-solutions/`.
+As seguintes tecnologias foram utilizadas na construção do projeto:
 
-### 4. Publicar alterações futuras
+### Front-End
 
-Depois de editar arquivos, envie a atualização. Cada envio para a branch `main` gera uma nova publicação automaticamente.
+* **HTML5**
+* **CSS3**
+* **JavaScript**
 
-```bash
-git add .
-git commit -m "chore: atualizar site"
-git push
-```
+### Versionamento e publicação
 
-## Checklist antes de publicar
+* **Git**
+* **GitHub**
 
-- Teste o `index.html` em navegador no computador e no celular.
-- Confirme o e-mail e o número de WhatsApp em `index.html` antes de tornar o repositório público.
-- Não envie arquivos `.env`, senhas, tokens ou chaves. Eles já são ignorados por padrão.
-- Mantenha a publicação protegida: o workflow possui somente as permissões necessárias para publicar o Pages.
+### Design e Prototipação
 
-## Domínio próprio
+* **Figma**
+* **VsCode**
 
-Depois de registrar um domínio, configure-o em **Settings → Pages → Custom domain**. Siga os registros DNS indicados pela própria tela do GitHub. Quando o domínio estiver validado, habilite **Enforce HTTPS**. Não crie um arquivo `CNAME` antes de ter o domínio e os registros configurados.
+---
+## 🦸 Autores
 
-## Personalizações rápidas
+<a href="https://br.linkedin.com/in/thaisferreirademoura2004">
+<a href="https://www.linkedin.com/in/gustavo-rss?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+<a href="https://www.linkedin.com/in/anny-d-719892274?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+<a href="https://www.linkedin.com/in/deivid-da-silva-afonso-dev/">
 
-- **E-mail e WhatsApp:** procure por `deividsa@gmail.com` e `551193233534` em `index.html`.
-- **Textos e equipe:** edite diretamente as seções do mesmo arquivo.
-- **Cores:** as variáveis principais ficam no início do bloco `<style>`, em `:root`.
+<a href="#">
 
-## Desenvolvimento local
+<strong>Anny Michelle Gomes Diniz Alves</strong>
 
-Abra `index.html` em qualquer navegador moderno. Não há instalação, banco de dados ou servidor obrigatório.
+</a>
 
-## Outras opções de hospedagem
+<a href="#">
 
-Para publicar na Oracle Cloud Infrastructure, veja [ORACLE-CLOUD.md](ORACLE-CLOUD.md).
+<strong>David Afonso</strong>
+
+</a>
+
+<a href="#">
+
+<strong>Gustavo Robson</strong>
+
+</a>
+
+<a href="https://br.linkedin.com/in/thaisferreirademoura2004">
+
+<strong>Thais Ferreira de Moura</strong>
+
+</a>
+
+---
+
+<p align="center">
+  Desenvolvido pela equipe <strong>Fatec Solutions</strong> durante o
+  <strong>Desafio de Ideias SENAI + FATEC Diadema</strong> 🚀
+</p>
+
+</a>
+
+<br />
+
+[![Gmail Badge](https://img.shields.io/badge/-thaisluzferreira2004@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:thaisluzferreira2004@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**.
+
+Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
+
+---
+
+<p align="center">
+  Desenvolvido durante o <strong>Desafio de Ideias SENAI + FATEC Diadema</strong> 🚀
+</p>
+
+<p align="center">
+  Feito por <strong>Thais Ferreira</strong> 👋🏽
+</p>

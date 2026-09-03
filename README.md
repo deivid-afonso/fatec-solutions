@@ -158,102 +158,50 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 
 * **Git**
 * **GitHub**
-* **GitHub Actions**
-* **GitHub Pages**
 
 ### Design e Prototipação
 
 * **Figma**
+* **VsCode**
 
 ---
-
-## ☁️ Publicação
-
-O projeto possui **publicação automática no GitHub Pages**, utilizando **GitHub Actions**.
-
-A cada alteração enviada para a branch `main`, o workflow responsável pelo deploy é executado automaticamente, realizando uma nova publicação do projeto.
-
-### Fluxo de publicação
-
-```text
-Desenvolvimento
-      ↓
-Alterações no projeto
-      ↓
-Git Add / Commit / Push
-      ↓
-GitHub
-      ↓
-GitHub Actions
-      ↓
-Deploy automático
-      ↓
-GitHub Pages
-```
-
-O projeto também possui documentação para publicação na **Oracle Cloud Infrastructure**, disponível no arquivo:
-
-```text
-ORACLE-CLOUD.md
-```
-
----
-
-## 📁 Estrutura do projeto
-
-```text
-fatec-solutions/
-│
-├── .github/
-│   └── workflows/
-│       └── deploy-pages.yml
-│
-├── assets/
-│   └── imagens do projeto
-│
-├── .gitignore
-├── favicon.svg
-├── index.html
-├── ORACLE-CLOUD.md
-└── README.md
-```
-
-## 🤝 Como contribuir para o projeto
-
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch para suas alterações:
-
-```bash
-git checkout -b minha-feature
-```
-
-3. Realize as alterações necessárias.
-4. Salve e faça o commit:
-
-```bash
-git add .
-git commit -m "feat: descrição da alteração"
-```
-
-5. Envie sua branch:
-
-```bash
-git push origin minha-feature
-```
-
-6. Abra um **Pull Request**.
-
----
-
 ## 🦸 Autores
 
 <a href="https://br.linkedin.com/in/thaisferreirademoura2004">
+<a href="https://www.linkedin.com/in/gustavo-rss?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+<a href="https://www.linkedin.com/in/anny-d-719892274?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+<a href="https://www.linkedin.com/in/deivid-da-silva-afonso-dev/">
+
+<a href="#">
 
 <strong>Anny Michelle Gomes Diniz Alves</strong>
+
+</a>
+
+<a href="#">
+
 <strong>David Afonso</strong>
+
+</a>
+
+<a href="#">
+
 <strong>Gustavo Robson</strong>
+
+</a>
+
+<a href="https://br.linkedin.com/in/thaisferreirademoura2004">
+
 <strong>Thais Ferreira de Moura</strong>
 
+</a>
+
+---
+
+<p align="center">
+  Desenvolvido pela equipe <strong>Fatec Solutions</strong> durante o
+  <strong>Desafio de Ideias SENAI + FATEC Diadema</strong> 🚀
+</p>
 
 </a>
 

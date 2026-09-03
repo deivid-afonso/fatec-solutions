@@ -96,9 +96,10 @@ O projeto está sendo desenvolvido de forma multidisciplinar, unindo conheciment
 ## 🎨 Layout
 
 ![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%201%20.png)
-
-
-> **Observação:** substitua os caminhos das imagens acima pelos arquivos reais utilizados no projeto.
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%202.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%203.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%204.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%205.png)
 
 ---
 
@@ -216,26 +217,6 @@ fatec-solutions/
 ├── ORACLE-CLOUD.md
 └── README.md
 ```
-
----
-
-## 🔄 Próximos passos
-
-O projeto encontra-se em desenvolvimento e poderá receber novas funcionalidades conforme a evolução do **Desafio de Ideias**.
-
-Entre os possíveis próximos passos estão:
-
-* [ ] Desenvolvimento da solução completa de controle de qualidade;
-* [ ] Sistema de cadastro de lotes;
-* [ ] Sistema de rastreabilidade;
-* [ ] Dashboard para acompanhamento dos indicadores de qualidade;
-* [ ] Digitalização dos registros de inspeção;
-* [ ] Controle de não conformidades;
-* [ ] Histórico das informações;
-* [ ] Perfis e níveis de acesso;
-* [ ] Integração com outros sistemas utilizados pela indústria.
-
----
 
 ## 🤝 Como contribuir para o projeto
 

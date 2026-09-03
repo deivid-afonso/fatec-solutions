@@ -95,7 +95,7 @@ O projeto está sendo desenvolvido de forma multidisciplinar, unindo conheciment
 
 ## 🎨 Layout
 
-![Fatec Solutions - Desktop](./assets/desktop.png)
+![Fatec Solutions - Desktop](https://github.com/thaisferreira-moura/fatec-solutions/blob/main/miniatura%20fatecsolutions%201%20.png)
 
 
 > **Observação:** substitua os caminhos das imagens acima pelos arquivos reais utilizados no projeto.

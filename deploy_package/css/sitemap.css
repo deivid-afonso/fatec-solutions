@@ -1,0 +1,33 @@
+/* ============================================================
+   sitemap.css — TechTrace 360
+   Estilos exclusivos da página sitemap.html: cabeçalho da página,
+   alternância de visualização (por página / por perfil) e a
+   árvore de nós usada nas duas visualizações.
+   Depende de base.css e components.css já carregados.
+   ============================================================ */
+
+.sm-head{text-align:center; margin:1.5rem 0 2rem}
+.sm-head .tag{display:inline-block; font-size:.8em; font-weight:800; letter-spacing:.06em; color:var(--accent); background:var(--surface-2); border:1px solid var(--border); border-radius:999px; padding:.3em .9em; margin-bottom:.7em}
+.sm-head h1{font-size:2rem}
+.sm-head p{color:var(--muted); margin-top:.4em; max-width:620px; margin-left:auto; margin-right:auto}
+
+.sm-toggle{display:flex; justify-content:center; gap:.6rem; margin-bottom:2rem; flex-wrap:wrap}
+.sm-toggle button{border:2px solid var(--border); background:var(--surface); color:var(--text); border-radius:12px; padding:.7rem 1.3rem; font-weight:800; min-height:48px}
+.sm-toggle button.active{background:var(--primary); color:var(--primary-ink); border-color:var(--primary)}
+
+.sm-tree{max-width:820px; margin:0 auto}
+.sm-node{background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1.1rem 1.3rem; margin-bottom:1rem; box-shadow:var(--shadow)}
+.sm-node .row{display:flex; align-items:center; gap:.7rem; flex-wrap:wrap}
+.sm-node .em{font-size:1.4rem}
+.sm-node h3{font-size:1.05rem}
+.sm-node .path{color:var(--accent); font-size:.78em; font-weight:700; font-family:monospace}
+.sm-node p.desc{margin:.4rem 0 0; color:var(--muted); font-size:.88em}
+.sm-children{margin:.9rem 0 0 2.3rem; padding-left:1rem; border-left:2px dashed var(--border); display:flex; flex-direction:column; gap:.7rem}
+.sm-child{display:flex; align-items:baseline; gap:.6rem; font-size:.9em; flex-wrap:wrap}
+.sm-child b{color:var(--text)}
+.sm-child span{color:var(--muted)}
+.sm-badge{display:inline-block; font-size:.68em; font-weight:800; padding:.15em .55em; border-radius:999px; margin-left:.4em; vertical-align:middle}
+.sm-badge.on{background:var(--success-bg); color:var(--success-ink)}
+.sm-badge.off{background:var(--surface-2); color:var(--muted)}
+
+.hidden{display:none !important}

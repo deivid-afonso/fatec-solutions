@@ -1,0 +1,91 @@
+/* ============================================================
+   components.css — TechTrace 360 / Fatec Solutions
+   Componentes reutilizáveis entre as telas do sistema logado:
+   barra de acessibilidade, cabeçalho do app, wizard do Operador,
+   checklist da Qualidade e painéis do Administrador (KPIs,
+   tabela de lotes, linha do tempo de rastreio).
+   Depende de base.css já estar carregado.
+   ============================================================ */
+
+/* ---------- Barra de Acessibilidade ---------- */
+.a11y-bar{position:sticky; top:0; z-index:200; display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; background:var(--surface); border-bottom:2px solid var(--border); padding:.6rem 1rem}
+.a11y-bar .label{font-size:.85em; font-weight:700; color:var(--muted); margin-right:.3rem}
+.a11y-btn{display:inline-flex; align-items:center; gap:.4rem; border:2px solid var(--border); background:var(--surface-2); color:var(--text); border-radius:10px; padding:.5rem .8rem; font-weight:700; font-size:.85em; min-height:44px}
+.a11y-btn[aria-pressed="true"]{background:var(--primary); color:var(--primary-ink); border-color:var(--primary)}
+.a11y-spacer{flex:1}
+.a11y-brand{font-family:var(--font-head); font-weight:800}
+
+
+/* ==================== APP SHELL (Operador / Qualidade / Admin) ==================== */
+.app-header{display:flex; align-items:center; justify-content:space-between; gap:1rem; background:var(--surface); border-bottom:2px solid var(--border); padding:.9rem 1.2rem; flex-wrap:wrap}
+.app-header .who{display:flex; align-items:center; gap:.6rem}
+.app-header .avatar{width:2.6rem; height:2.6rem; border-radius:999px; background:var(--primary); color:var(--primary-ink); display:grid; place-items:center; font-weight:800}
+.app-header .name{font-weight:800}
+.app-header .role{font-size:.8em; color:var(--muted)}
+.logout-btn{border:2px solid var(--border); background:var(--surface-2); color:var(--text); border-radius:10px; padding:.5rem 1rem; font-weight:700; min-height:44px}
+
+/* ---- Wizard CNC ---- */
+.progress{display:flex; gap:.5rem; margin:1.5rem 0}
+.progress .dot{flex:1; height:10px; border-radius:999px; background:var(--surface-2); border:1px solid var(--border)}
+.progress .dot.done{background:var(--success)}
+.progress .dot.active{background:var(--primary)}
+.step-box{background:var(--surface); border:2px solid var(--border); border-radius:20px; padding:2rem; box-shadow:var(--shadow)}
+.step-box h2{font-size:1.5rem; margin-bottom:.3rem}
+.step-box .hint{color:var(--muted); margin-bottom:1.4rem}
+.choice-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem}
+.choice-card{border:3px solid var(--border); background:var(--surface-2); border-radius:16px; padding:1.3rem 1rem; text-align:left; min-height:110px; display:flex; flex-direction:column; gap:.4rem}
+.choice-card .em{font-size:1.8rem}
+.choice-card b{font-size:1em}
+.choice-card span{color:var(--muted); font-size:.82em}
+.choice-card.selected{border-color:var(--primary); background:var(--surface); box-shadow:0 0 0 3px var(--primary) inset}
+.qty-row{display:flex; align-items:center; justify-content:center; gap:1.2rem; margin:1rem 0 1.6rem}
+.qty-btn{width:4rem; height:4rem; border-radius:16px; border:3px solid var(--primary); background:var(--surface); color:var(--primary); font-size:2rem; font-weight:800; line-height:1}
+.qty-value{font-size:2.4rem; font-weight:800; min-width:5rem; text-align:center; font-family:var(--font-head)}
+.qty-label{text-align:center; color:var(--muted); font-size:.85em; margin-top:-.6rem}
+.wizard-nav{display:flex; justify-content:space-between; gap:1rem; margin-top:1.8rem}
+.btn{border:none; border-radius:14px; padding:1rem 1.6rem; font-weight:800; font-size:1rem; min-height:56px; display:inline-flex; align-items:center; justify-content:center; gap:.5rem}
+.btn-primary{background:var(--primary); color:var(--primary-ink)}
+.btn-ghost{background:var(--surface-2); color:var(--text); border:2px solid var(--border)}
+.btn-success{background:var(--success); color:#04250f}
+.result-card{background:var(--surface); border:2px solid var(--success); border-radius:20px; padding:2rem; text-align:center; box-shadow:var(--shadow)}
+.result-card .ok-badge{display:inline-block; background:var(--success-bg); color:var(--success-ink); font-weight:800; padding:.4em 1em; border-radius:999px; margin-bottom:1rem; font-size:.9em}
+.qr-box{width:9rem; height:9rem; margin:1rem auto; background:#fff; border-radius:14px; display:grid; place-items:center; border:2px solid var(--border)}
+.result-lote{font-family:var(--font-head); font-size:1.6rem; font-weight:800}
+.result-desc{color:var(--muted); margin-top:.3rem}
+
+/* ---- Qualidade ---- */
+.lote-select{background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1rem 1.2rem; margin-bottom:1.2rem; display:flex; align-items:center; gap:.8rem; flex-wrap:wrap}
+.lote-select select{border:2px solid var(--border); border-radius:10px; padding:.6rem; background:var(--surface-2); color:var(--text); font-weight:700; min-height:44px; flex:1; min-width:220px}
+.check-item{background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1.2rem; margin-bottom:1rem}
+.check-item .title{font-weight:800; margin-bottom:.2rem}
+.check-item .spec{color:var(--muted); font-size:.85em; margin-bottom:.9rem}
+.check-toggle{display:flex; gap:.8rem}
+.tgl{flex:1; border:3px solid var(--border); background:var(--surface-2); color:var(--text); border-radius:12px; padding:.9rem; font-weight:800; min-height:56px}
+.tgl.ok.active{background:var(--success-bg); color:var(--success-ink); border-color:var(--success)}
+.tgl.bad.active{background:var(--danger-bg); color:var(--danger-ink); border-color:var(--danger)}
+.qual-footer{display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between; align-items:center; margin-top:1.5rem; background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1.2rem}
+
+/* ---- Admin shell ---- */
+.admin-tabs{display:flex; flex-wrap:wrap; gap:.5rem; margin:1.2rem 0 1.6rem}
+.admin-tab{border:2px solid var(--border); background:var(--surface); color:var(--text); border-radius:12px; padding:.7rem 1.1rem; font-weight:800; font-size:.9em; min-height:48px}
+.admin-tab.active{background:var(--primary); color:var(--primary-ink); border-color:var(--primary)}
+.admin-tab.launch{background:var(--surface-2)}
+.kpi-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin-bottom:1.5rem}
+.kpi{background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1.2rem; box-shadow:var(--shadow)}
+.kpi .lbl{font-size:.78em; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:.04em}
+.kpi .val{font-family:var(--font-head); font-size:2rem; font-weight:800; margin-top:.3rem}
+.table-card{background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:1.2rem; overflow-x:auto}
+table.lotes{width:100%; border-collapse:collapse; font-size:.92em}
+table.lotes th{text-align:left; color:var(--muted); font-size:.78em; text-transform:uppercase; letter-spacing:.04em; padding:.6rem .5rem; border-bottom:2px solid var(--border)}
+table.lotes td{padding:.7rem .5rem; border-bottom:1px solid var(--border)}
+.status-pill{display:inline-flex; align-items:center; gap:.4em; font-weight:800; font-size:.82em; padding:.25em .7em; border-radius:999px}
+.status-pill.ok{background:var(--success-bg); color:var(--success-ink)}
+.status-pill.warn{background:var(--warning-bg); color:var(--warning-ink)}
+.status-pill.bad{background:var(--danger-bg); color:var(--danger-ink)}
+.empty-hint{color:var(--muted); font-style:italic; padding:1rem 0}
+
+.timeline{border-left:3px solid var(--border); padding-left:1.2rem; margin-top:1rem}
+.timeline .ev{margin-bottom:1.1rem; position:relative}
+.timeline .ev::before{content:""; position:absolute; left:-1.53rem; top:.3rem; width:.7rem; height:.7rem; border-radius:50%; background:var(--primary)}
+.timeline .ev b{display:block}
+.timeline .ev span{color:var(--muted); font-size:.85em}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Fatec Solutions · TechTrace 360 — Protótipo Completo</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<!-- ===================== BARRA DE ACESSIBILIDADE (sempre visível) ===================== -->
+<div class="a11y-bar" role="toolbar" aria-label="Controles de acessibilidade">
+  <span class="a11y-brand">TechTrace 360</span>
+  <span class="a11y-spacer"></span>
+  <span class="label">Acessibilidade:</span>
+  <button class="a11y-btn" id="btn-theme" aria-pressed="false" type="button">🌙 <span id="theme-label">Tema Escuro</span></button>
+  <button class="a11y-btn" id="btn-contrast" aria-pressed="false" type="button">◐ Alto Contraste</button>
+  <button class="a11y-btn" id="btn-font-down" type="button">A−</button>
+  <button class="a11y-btn" id="btn-font-up" type="button">A+</button>
+</div>
+
+<!-- ===================== TELA 0: LANDING PAGE FATEC SOLUTIONS ===================== -->
+<div id="screen-landing">
+  <nav class="landing-nav">
+    <div class="container">
+      <div class="brand"><span class="brand-mark">F</span>FATEC SOLUTIONS</div>
+      <div class="landing-links">
+        <a href="#l-solucoes">Soluções</a>
+        <a href="#l-equipe">Equipe</a>
+        <a href="#l-produto">TechTrace 360</a>
+        <a href="sitemap.html">Mapa do Site</a>
+      </div>
+      <button class="cta-btn" onclick="showScreen('screen-login')">Área do Cliente →</button>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <span class="eyebrow">TECNOLOGIA APLICADA À INDÚSTRIA</span>
+    <h1>Da complexidade à próxima solução.</h1>
+    <p>Criamos produtos digitais, automações e experiências que transformam desafios operacionais em resultados claros para pessoas e negócios.</p>
+    <div class="actions">
+      <button class="cta-btn" onclick="showScreen('screen-login')">Acessar o Sistema →</button>
+      <button class="cta-btn ghost" onclick="document.getElementById('l-solucoes').scrollIntoView({behavior:'smooth'})">Como trabalhamos</button>
+    </div>
+  </header>
+
+  <section class="section container" id="l-solucoes">
+    <h2>O que fazemos</h2>
+    <p class="sub">Unimos visão de negócio e execução técnica para reduzir atrito, organizar informação e abrir espaço para crescer.</p>
+    <div class="card-grid">
+      <div class="info-card"><div class="ic">🧭</div><h3>Diagnóstico de processos</h3><p>Mapeamos rotinas e pontos de fricção para definir onde a tecnologia realmente gera valor.</p></div>
+      <div class="info-card"><div class="ic">🖥️</div><h3>Experiências digitais</h3><p>Desenhamos interfaces claras e protótipos testáveis para transformar uma ideia em produto.</p></div>
+      <div class="info-card"><div class="ic">⚙️</div><h3>Sistemas e automação</h3><p>Construímos ferramentas confiáveis para conectar dados e dar escala ao trabalho.</p></div>
+    </div>
+  </section>
+
+  <section class="section container" id="l-produto">
+    <div class="access-banner">
+      <div>
+        <h3>TechTrace 360 está no ar</h3>
+        <p>Rastreabilidade industrial inteligente para o chão de fábrica — Caso TechParts Industrial.</p>
+      </div>
+      <button class="cta-btn" onclick="showScreen('screen-login')">Acessar o Sistema →</button>
+    </div>
+  </section>
+
+  <section class="section container" id="l-equipe">
+    <h2>Quem constrói</h2>
+    <p class="sub">Um time multidisciplinar que combina pensamento analítico, design e desenvolvimento.</p>
+    <div class="team-grid">
+      <div class="team-card"><div class="av">D</div><h3>Deivid</h3><span class="role">Back-end &amp; Estratégia</span><p>.NET, arquitetura de sistemas.</p></div>
+      <div class="team-card"><div class="av">T</div><h3>Thaís</h3><span class="role">Front-end &amp; UX/UI</span><p>Interfaces e experiência do usuário.</p></div>
+      <div class="team-card"><div class="av">G</div><h3>Gustavo</h3><span class="role">Desenvolvimento</span><p>Front-end e back-end.</p></div>
+      <div class="team-card"><div class="av">A</div><h3>Anny</h3><span class="role">Design &amp; Web</span><p>Design para web e Figma.</p></div>
+    </div>
+  </section>
+
+  <footer class="landing-footer">© 2026 Fatec Solutions · Protótipo de demonstração — TechTrace 360 · <a href="sitemap.html" style="color:var(--accent)">Mapa do Site</a> · <a href="manual/Manual-do-Usuario-TechTrace360.pdf" style="color:var(--accent)">Manual do Usuário (PDF)</a></footer>
+</div>
+
+<!-- ===================== TELA 1: LOGIN (demonstrativo) ===================== -->
+<main id="screen-login" class="screen hidden">
+  <a href="#" class="back-link" onclick="showScreen('screen-landing'); return false;">← Voltar para o site</a>
+  <div class="login-head">
+    <span class="tag">PROTÓTIPO VISUAL · SOMENTE DEMONSTRAÇÃO</span>
+    <h1>Selecione um perfil para entrar</h1>
+    <p>5 perfis estão mapeados no sistema. Nesta demonstração, 3 estão com acesso ativo.</p>
+  </div>
+
+  <div class="role-grid">
+    <button class="role-card enabled" onclick="login('admin')">
+      <span class="icon">🛠️</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Administrador</h3>
+      <p>Painel completo: dashboard, apontamento, qualidade, rastreio e gestão.</p>
+    </button>
+
+    <button class="role-card enabled" onclick="login('operador')">
+      <span class="icon">⚙️</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Operador CNC</h3>
+      <p>Apontamento de produção na máquina, tela em modo tablet.</p>
+    </button>
+
+    <button class="role-card enabled" onclick="login('qualidade')">
+      <span class="icon">🔍</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Qualidade</h3>
+      <p>Checklist de homologação do lote com validação por toque.</p>
+    </button>
+
+    <div class="role-card disabled">
+      <span class="icon">📦</span>
+      <span class="role-badge off">Em breve</span>
+      <h3>Logística</h3>
+      <p>Liberação de expedição via leitura de QR Code.</p>
+    </div>
+
+    <div class="role-card disabled">
+      <span class="icon">📈</span>
+      <span class="role-badge off">Em breve</span>
+      <h3>Gestor / Diretoria</h3>
+      <p>Visão executiva dedicada (hoje disponível dentro do Administrador).</p>
+    </div>
+  </div>
+
+  <div class="demo-note">
+    ℹ️ Protótipo visual sem autenticação real — os cliques em "Administrador", "Operador CNC" e "Qualidade" abrem as telas completas. Os dados de lote criados no Operador aparecem automaticamente no Dashboard, Rastreio e Gestão do Administrador, e a homologação feita na Qualidade atualiza esse status em tempo real, simulando a integração entre os módulos.
+  </div>
+</main>
+
+<!-- ===================== TELA 2: OPERADOR CNC ===================== -->
+<div id="screen-operador" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">GM</div>
+      <div><div class="name">Gustavo Mendes</div><div class="role">Operador CNC · Turno 1</div></div>
+    </div>
+    <button class="logout-btn" id="op-exit-btn" onclick="exitScreen()">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <div class="progress" id="op-progress">
+      <div class="dot active" data-step="1"></div>
+      <div class="dot" data-step="2"></div>
+      <div class="dot" data-step="3"></div>
+      <div class="dot" data-step="4"></div>
+    </div>
+
+    <div class="step-box" id="op-step-1">
+      <h2>1. Escolha a máquina</h2>
+      <p class="hint">Toque na máquina que você está operando agora.</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-value="Mazak-04" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Mazak-04</b><span>Centro de usinagem 5 eixos</span></button>
+        <button class="choice-card" data-value="Romi-02" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Romi-02</b><span>Torno CNC</span></button>
+        <button class="choice-card" data-value="Haas-01" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Haas-01</b><span>Fresadora</span></button>
+      </div>
+      <div class="wizard-nav"><span></span><button class="btn btn-primary" onclick="opNext(1)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-2">
+      <h2>2. Escolha a peça</h2>
+      <p class="hint">Toque no componente que está sendo produzido.</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-value="Eixo Transmissão T-4" onclick="selectCard(this,'peca')"><span class="em">⚙️</span><b>Eixo Transmissão T-4</b><span>Automotivo</span></button>
+        <button class="choice-card" data-value="Flange Hidráulica" onclick="selectCard(this,'peca')"><span class="em">🔩</span><b>Flange Hidráulica</b><span>Alta pressão</span></button>
+        <button class="choice-card" data-value="Coroa Dentada Z-34" onclick="selectCard(this,'peca')"><span class="em">⚙️</span><b>Coroa Dentada Z-34</b><span>Redução</span></button>
+      </div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(2)">← Voltar</button><button class="btn btn-primary" onclick="opNext(2)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-3">
+      <h2>3. Quantidade produzida</h2>
+      <p class="hint">Use os botões grandes para ajustar — não é necessário digitar.</p>
+      <div class="qty-row"><button class="qty-btn" onclick="qtyChange(-10)">−</button><div class="qty-value" id="qty-display">500</div><button class="qty-btn" onclick="qtyChange(10)">+</button></div>
+      <div class="qty-label">Peças boas nesta leva</div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(3)">← Voltar</button><button class="btn btn-primary" onclick="opNext(3)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-4">
+      <h2>4. Confirmar apontamento</h2>
+      <p class="hint">Confira os dados e gere a etiqueta com QR Code.</p>
+      <div class="choice-grid" style="grid-template-columns:1fr">
+        <div class="choice-card selected" style="cursor:default">
+          <span class="em">📋</span>
+          <b id="resumo-maquina">Máquina: —</b>
+          <span id="resumo-peca">Peça: —</span>
+          <span id="resumo-qtd">Quantidade: —</span>
+        </div>
+      </div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(4)">← Voltar</button><button class="btn btn-success" onclick="gerarEtiqueta()">🏷️ Gerar Etiqueta QR Code</button></div>
+    </div>
+
+    <div class="result-card hidden" id="op-resultado">
+      <span class="ok-badge">✓ Lote cadastrado com sucesso</span>
+      <div class="qr-box"><svg width="80" height="80" viewBox="0 0 100 100" fill="#0B2545"><path d="M10 10h30v30h-30zM15 15v20h20v-20zM22 22h6v6h-6zM60 10h30v30h-30zM65 15v20h20v-20zM72 22h6v6h-6zM10 60h30v30h-30zM15 65v20h20v-20zM22 72h6v6h-6zM60 60h10v10h-10zM80 60h10v10h-10zM70 70h10v10h-10zM60 80h10v10h-10zM80 80h10v10h-10zM45 10h10v80h-10zM10 45h80v10h-80z"/></svg></div>
+      <div class="result-lote" id="result-lote-id">—</div>
+      <div class="result-desc" id="result-lote-desc">—</div>
+      <p style="color:var(--muted); font-size:.85em; margin-top:.6rem">Este lote já está disponível no Dashboard, Rastreio e Gestão do Administrador com status "Em inspeção".</p>
+      <div class="wizard-nav" style="justify-content:center"><button class="btn btn-primary" onclick="novoApontamento()">+ Novo Apontamento</button></div>
+    </div>
+  </main>
+</div>
+
+<!-- ===================== TELA 3: QUALIDADE ===================== -->
+<div id="screen-qualidade" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">MA</div>
+      <div><div class="name">Mariana Albuquerque</div><div class="role">Controle de Qualidade</div></div>
+    </div>
+    <button class="logout-btn" id="qual-exit-btn" onclick="exitScreen()">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <h2 style="margin-bottom:.3rem">Checklist de homologação</h2>
+    <p class="hint" style="color:var(--muted); margin-bottom:1rem">Toque em Conforme ou Não Conforme para cada item.</p>
+
+    <div class="lote-select">
+      <span style="font-weight:800">Lote em análise:</span>
+      <select id="qual-lote-picker" onchange="onLotePickerChange()"></select>
+    </div>
+
+    <div class="check-item">
+      <div class="title">Diâmetro externo da haste</div>
+      <div class="spec">Especificado: 45.00 mm ± 0.02 mm</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q1')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q1')">✕ Não conforme</button>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="title">Rugosidade superficial (Ra)</div>
+      <div class="spec">Especificado: máximo 0.80 µm</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q2')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q2')">✕ Não conforme</button>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="title">Dureza Rockwell C</div>
+      <div class="spec">Especificado: 58 a 62 HRC</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q3')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q3')">✕ Não conforme</button>
+      </div>
+    </div>
+
+    <div class="qual-footer">
+      <div>Assinatura digital: <strong>Mariana Albuquerque</strong></div>
+      <div style="display:flex; gap:.8rem">
+        <button class="btn btn-ghost" onclick="reprovarLote()">🚫 Abrir RNC</button>
+        <button class="btn btn-success" id="btn-homologar" onclick="homologarLote()">✓ Homologar Lote</button>
+      </div>
+    </div>
+    <p id="qual-empty-hint" class="empty-hint hidden">Nenhum lote pendente de inspeção no momento. Volte ao Operador CNC para gerar um novo apontamento.</p>
+  </main>
+</div>
+
+<!-- ===================== TELA 4: ADMINISTRADOR ===================== -->
+<div id="screen-admin" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">AD</div>
+      <div><div class="name">Administrador</div><div class="role">Acesso completo ao sistema</div></div>
+    </div>
+    <button class="logout-btn" onclick="showScreen('screen-login')">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="dashboard" onclick="setAdminTab('dashboard')">📊 Dashboard</button>
+      <button class="admin-tab" data-tab="rastreio" onclick="setAdminTab('rastreio')">📦 Rastreio</button>
+      <button class="admin-tab" data-tab="gestao" onclick="setAdminTab('gestao')">📈 Gestão</button>
+      <button class="admin-tab launch" onclick="openOperador('admin')">⚙️ Apontamento CNC →</button>
+      <button class="admin-tab launch" onclick="openQualidade('admin')">🔍 Inspeção Qualidade →</button>
+    </div>
+
+    <!-- Aba Dashboard -->
+    <section id="admin-tab-dashboard">
+      <div class="kpi-grid">
+        <div class="kpi"><div class="lbl">Total de lotes</div><div class="val" id="kpi-total">0</div></div>
+        <div class="kpi"><div class="lbl">Liberados</div><div class="val" id="kpi-liberados">0</div></div>
+        <div class="kpi"><div class="lbl">Em inspeção</div><div class="val" id="kpi-inspecao">0</div></div>
+        <div class="kpi"><div class="lbl">Bloqueados (RNC)</div><div class="val" id="kpi-bloqueados">0</div></div>
+      </div>
+      <div class="table-card">
+        <table class="lotes">
+          <thead><tr><th>Lote</th><th>Peça</th><th>Máquina</th><th>Qtd</th><th>Status</th></tr></thead>
+          <tbody id="admin-lotes-tbody"></tbody>
+        </table>
+        <p class="empty-hint hidden" id="admin-lotes-empty">Nenhum lote registrado ainda. Abra "Apontamento CNC" para criar o primeiro.</p>
+      </div>
+    </section>
+
+    <!-- Aba Rastreio -->
+    <section id="admin-tab-rastreio" class="hidden">
+      <div class="lote-select">
+        <span style="font-weight:800">Selecionar lote:</span>
+        <select id="rastreio-picker" onchange="renderRastreio()"></select>
+      </div>
+      <div class="table-card" id="rastreio-box">
+        <p class="empty-hint" id="rastreio-empty">Nenhum lote registrado ainda.</p>
+        <div class="timeline hidden" id="rastreio-timeline"></div>
+      </div>
+    </section>
+
+    <!-- Aba Gestão -->
+    <section id="admin-tab-gestao" class="hidden">
+      <div class="kpi-grid">
+        <div class="kpi"><div class="lbl">Peças em lotes liberados</div><div class="val" id="gestao-pecas-liberadas">0</div></div>
+        <div class="kpi"><div class="lbl">Taxa de conformidade</div><div class="val" id="gestao-taxa">—</div></div>
+        <div class="kpi"><div class="lbl">Lotes com RNC aberta</div><div class="val" id="gestao-rnc">0</div></div>
+      </div>
+      <div class="table-card">
+        <p style="margin:0; color:var(--muted)">Indicadores calculados em tempo real a partir dos lotes registrados nesta sessão de demonstração (Operador CNC → Qualidade → Administrador).</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/accessibility.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/operador.js"></script>
+<script src="js/qualidade.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

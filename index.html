@@ -1,34 +1,336 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A Fatec Solutions desenha produtos digitais e automações para transformar operações complexas em resultados mensuráveis.">
-  <meta name="theme-color" content="#070b17">
-  <meta property="og:title" content="Fatec Solutions | Tecnologia que move operações">
-  <meta property="og:description" content="Produtos digitais, automação e estratégia para desafios reais.">
-  <meta property="og:type" content="website">
-  <title>Fatec Solutions | Tecnologia que move operações</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <style>
-    :root{--bg:#070b17;--surface:#0d1428;--text:#f5f7ff;--muted:#aab6d3;--line:rgba(202,216,255,.16);--cyan:#57e6d5;--violet:#8c7bff;--scale:1}*{box-sizing:border-box}html{scroll-behavior:smooth;font-size:calc(16px * var(--scale))}body{margin:0;overflow-x:hidden;background:var(--bg);color:var(--text);font:400 1rem/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}body.reduce-motion *,body.reduce-motion *::before,body.reduce-motion *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}a{color:inherit;text-underline-offset:4px}button,input,textarea{font:inherit}button{cursor:pointer}:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}.skip{position:fixed;z-index:100;left:1rem;top:-4rem;padding:.75rem 1rem;border-radius:.5rem;background:var(--cyan);color:#021b1d;font-weight:800;text-decoration:none}.skip:focus{top:1rem}.container{width:min(1160px,calc(100% - 3rem));margin:auto}.eyebrow{display:flex;align-items:center;gap:.55rem;color:var(--cyan);font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.eyebrow::before{width:.5rem;height:.5rem;border-radius:50%;background:currentColor;box-shadow:0 0 16px currentColor;content:""}.topbar{border-bottom:1px solid var(--line);color:var(--muted);font-size:.8rem}.topbar .container{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0}.topbar a{color:var(--text);font-weight:700}header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(7,11,23,.82);backdrop-filter:blur(16px)}nav{display:flex;align-items:center;justify-content:space-between;min-height:4.8rem;gap:1.25rem}.brand{display:inline-flex;align-items:center;gap:.7rem;color:var(--text);font-size:1rem;font-weight:850;letter-spacing:-.035em;text-decoration:none;white-space:nowrap}.brand-mark{display:grid;width:2.25rem;height:2.25rem;place-items:center;border:1px solid rgba(87,230,213,.7);border-radius:.7rem;background:linear-gradient(135deg,rgba(87,230,213,.24),rgba(140,123,255,.3));box-shadow:inset 0 0 18px rgba(87,230,213,.15);color:var(--cyan);font-weight:900}.nav-links{display:flex;align-items:center;gap:1.5rem;font-size:.88rem;font-weight:650}.nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}.nav-links a:hover{color:var(--cyan)}.button{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:2.8rem;padding:.65rem 1rem;border:1px solid transparent;border-radius:.65rem;background:var(--cyan);color:#03191a;font-size:.88rem;font-weight:850;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}.button:hover{box-shadow:0 10px 28px rgba(87,230,213,.23);transform:translateY(-2px)}.button.secondary{border-color:var(--line);background:rgba(255,255,255,.035);color:var(--text)}.button.secondary:hover{border-color:rgba(87,230,213,.55);background:rgba(87,230,213,.08);box-shadow:none}.menu{display:none;border:1px solid var(--line);border-radius:.5rem;background:transparent;color:var(--text);padding:.5rem .7rem}.hero{position:relative;padding:7rem 0 5.5rem;isolation:isolate}.hero::before{position:absolute;z-index:-1;top:-20rem;right:-13rem;width:43rem;height:43rem;border-radius:50%;background:radial-gradient(circle,rgba(74,141,255,.22),rgba(140,123,255,.09) 40%,transparent 68%);content:""}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:4.5rem}h1,h2,h3,p{margin-top:0}h1{max-width:760px;margin:1.25rem 0 1.5rem;font-size:clamp(3.25rem,7vw,6.3rem);font-weight:780;letter-spacing:-.075em;line-height:.96}.gradient-text{background:linear-gradient(100deg,var(--cyan),#a59bff 80%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:620px;color:var(--muted);font-size:1.1rem}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.trust{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:3.25rem;color:var(--muted);font-size:.78rem}.trust span{display:flex;align-items:center;gap:.4rem}.trust b{color:var(--cyan)}.terminal{position:relative;overflow:hidden;border:1px solid rgba(147,164,217,.28);border-radius:1rem;background:linear-gradient(145deg,rgba(21,35,67,.98),rgba(10,16,33,.97));box-shadow:0 24px 70px rgba(0,0,0,.32),inset 0 1px rgba(255,255,255,.06)}.terminal::after{position:absolute;right:-15%;bottom:-40%;width:16rem;height:16rem;border-radius:50%;background:rgba(87,230,213,.14);filter:blur(20px);content:""}.terminal-top{display:flex;align-items:center;gap:.45rem;padding:.9rem 1.05rem;border-bottom:1px solid var(--line);color:#8492b3;font:.72rem ui-monospace,SFMono-Regular,Consolas,monospace}.dot{width:.55rem;height:.55rem;border-radius:50%;background:#ff707f}.dot:nth-child(2){background:#fbc46c}.dot:nth-child(3){background:var(--cyan)}.terminal-body{position:relative;z-index:1;padding:2rem}.command{color:var(--cyan);font:.86rem ui-monospace,SFMono-Regular,Consolas,monospace}.solution{margin:1rem 0 2rem;font-size:clamp(2.1rem,4vw,3.6rem);font-weight:760;letter-spacing:-.06em;line-height:1}.terminal-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.metric{padding:.85rem;border:1px solid var(--line);border-radius:.6rem;background:rgba(255,255,255,.035)}.metric span{display:block;color:var(--muted);font-size:.7rem}.metric b{color:var(--cyan);font-size:1.1rem}section{padding:6.5rem 0}.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.5rem;margin-bottom:2.8rem}h2{margin:.65rem 0 0;font-size:clamp(2.15rem,4vw,4rem);letter-spacing:-.06em;line-height:1.02}.section-head p{max-width:560px;align-self:end;margin:0;color:var(--muted)}.capabilities{border-block:1px solid var(--line);background:linear-gradient(90deg,rgba(87,230,213,.03),transparent 45%)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{min-height:285px;padding:1.45rem;border:1px solid var(--line);border-radius:.9rem;background:rgba(255,255,255,.025);transition:border-color .2s,transform .2s,background .2s}.card:hover{border-color:rgba(87,230,213,.48);background:rgba(87,230,213,.055);transform:translateY(-5px)}.card-number{color:var(--cyan);font:.8rem ui-monospace,monospace}.icon{display:grid;width:2.9rem;height:2.9rem;margin:2.1rem 0 1.1rem;place-items:center;border-radius:.7rem;background:rgba(140,123,255,.17);color:#b7afff;font-size:1.35rem}.card h3{margin-bottom:.55rem;font-size:1.25rem}.card p{color:var(--muted);font-size:.93rem}.method-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem}.method-copy{position:sticky;top:7rem;align-self:start}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:start;padding:1.35rem 0;border-bottom:1px solid var(--line)}.step span{color:var(--cyan);font:1rem ui-monospace,monospace}.step h3{margin:0 0 .25rem;font-size:1.1rem}.step p{margin:0;color:var(--muted);font-size:.9rem}.step i{color:var(--violet);font-style:normal;font-size:1.2rem}.team{background:var(--surface)}.people{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.person{padding:1.25rem;border:1px solid var(--line);border-radius:.8rem;background:var(--bg)}.avatar{display:grid;width:3rem;height:3rem;margin-bottom:2.3rem;place-items:center;border:1px solid rgba(87,230,213,.45);border-radius:.8rem;background:linear-gradient(135deg,rgba(87,230,213,.18),rgba(140,123,255,.23));color:var(--cyan);font-weight:800}.person h3{margin:0;font-size:1.13rem}.role{display:block;margin:.3rem 0 .9rem;color:var(--cyan);font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.person p{margin:0;color:var(--muted);font-size:.83rem}.contact{position:relative;overflow:hidden}.contact::before{position:absolute;z-index:-1;left:-16rem;bottom:-24rem;width:40rem;height:40rem;border-radius:50%;background:radial-gradient(circle,rgba(140,123,255,.18),transparent 65%);content:""}.contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:4.5rem}.contact-copy p{max-width:420px;margin-top:1.2rem;color:var(--muted)}.contact-links{display:grid;gap:.7rem;margin-top:2rem}.contact-links a{color:var(--text);font-size:.9rem;font-weight:700}.form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:1.5rem;border:1px solid var(--line);border-radius:1rem;background:var(--surface);box-shadow:0 20px 50px rgba(0,0,0,.2)}.field{display:grid;gap:.4rem}.field.full,.form-actions{grid-column:1/-1}label{color:var(--muted);font-size:.78rem;font-weight:700}input,textarea{width:100%;border:1px solid var(--line);border-radius:.55rem;background:rgba(255,255,255,.035);color:var(--text);padding:.75rem .8rem}input::placeholder,textarea::placeholder{color:#7180a1}textarea{min-height:7.5rem;resize:vertical}.form-actions{display:flex;flex-wrap:wrap;gap:.7rem;padding-top:.25rem}.accessibility{position:fixed;z-index:30;right:1rem;bottom:1rem}.accessibility summary{padding:.6rem .8rem;border:1px solid var(--line);border-radius:.55rem;background:var(--surface);color:var(--text);font-size:.78rem;font-weight:750;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25)}.accessibility div{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-bottom:.4rem;padding:.5rem;border:1px solid var(--line);border-radius:.55rem;background:var(--surface)}.accessibility button{border:1px solid var(--line);border-radius:.35rem;background:transparent;color:var(--text);padding:.45rem;font-size:.72rem}.accessibility button[aria-pressed="true"]{border-color:var(--cyan);background:rgba(87,230,213,.15);color:var(--cyan)}.high-contrast{--bg:#000;--surface:#080808;--text:#fff;--muted:#f2f2f2;--line:#fff;--cyan:#55ffff;--violet:#e0a8ff}footer{border-top:1px solid var(--line);color:var(--muted)}footer .container{display:flex;justify-content:space-between;gap:1rem;padding:1.6rem 0 5rem;font-size:.8rem}@media(max-width:850px){.hero-grid,.method-grid,.contact-grid,.section-head{grid-template-columns:1fr;gap:2rem}.hero{padding-top:5.5rem}.method-copy{position:static}.people{grid-template-columns:1fr 1fr}}@media(max-width:650px){.container{width:min(100% - 2rem,1160px)}.topbar .container{justify-content:center}.topbar span{display:none}.menu{display:block}.nav-links{position:absolute;top:4.8rem;right:1rem;left:1rem;display:none;align-items:stretch;padding:.65rem;border:1px solid var(--line);border-radius:.7rem;background:#0d1428;box-shadow:0 18px 32px rgba(0,0,0,.32)}.nav-links.open{display:grid}.nav-links a{padding:.65rem}nav>.button{display:none}h1{font-size:clamp(3rem,15vw,4.6rem)}.trust{gap:.75rem}.cards,.people,.form{grid-template-columns:1fr}.card{min-height:0}.icon{margin:1.25rem 0 .9rem}.field{grid-column:1/-1}.step{grid-template-columns:2.2rem 1fr}.step i{display:none}section{padding:4.5rem 0}footer .container{flex-direction:column;padding-bottom:5rem}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Fatec Solutions · TechTrace 360 — Protótipo Completo</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-  <div class="topbar"><div class="container"><span>Estratégia, design e desenvolvimento em um só time.</span><a href="mailto:deividsa@gmail.com">deividsa@gmail.com</a></div></div>
-  <header><nav class="container" aria-label="Navegação principal"><a class="brand" href="#inicio" aria-label="Fatec Solutions, início"><span class="brand-mark">F</span>FATEC SOLUTIONS</a><button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button><div class="nav-links" id="nav-links"><a href="#solucoes">Soluções</a><a href="#metodo">Método</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a></div><a class="button" href="#contato">Iniciar projeto <span aria-hidden="true">→</span></a></nav></header>
-  <main id="conteudo">
-    <section class="hero" id="inicio"><div class="container hero-grid"><div><span class="eyebrow">Tecnologia aplicada</span><h1>Da complexidade à <span class="gradient-text">próxima solução.</span></h1><p class="lead">Criamos produtos digitais, automações e experiências que transformam desafios operacionais em resultados claros para pessoas e negócios.</p><div class="actions"><a class="button" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a><a class="button secondary" href="#metodo">Como trabalhamos</a></div><div class="trust"><span><b>●</b> Foco no problema certo</span><span><b>●</b> Entregas em ciclos curtos</span><span><b>●</b> Soluções para usar de verdade</span></div></div><aside class="terminal" aria-label="Visão do processo Fatec Solutions"><div class="terminal-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>fatec-solutions / project</span></div><div class="terminal-body"><div class="command">$ transformando_desafio --em resultado</div><div class="solution">clareza<br>para <span class="gradient-text">evoluir.</span></div><div class="terminal-grid"><div class="metric"><span>Estratégia</span><b>01 / ouvir</b></div><div class="metric"><span>Produto</span><b>02 / criar</b></div><div class="metric"><span>Tecnologia</span><b>03 / entregar</b></div><div class="metric"><span>Impacto</span><b>04 / medir</b></div></div></div></aside></div></section>
-    <section class="capabilities" id="solucoes"><div class="container"><div class="section-head"><div><span class="eyebrow">O que fazemos</span><h2>Tecnologia que acompanha a sua operação.</h2></div><p>Unimos visão de negócio e execução técnica para reduzir atrito, organizar informação e abrir espaço para crescer.</p></div><div class="cards"><article class="card"><span class="card-number">01 / ESTRATÉGIA</span><div class="icon" aria-hidden="true">⌘</div><h3>Diagnóstico de processos</h3><p>Mapeamos rotinas, pontos de fricção e oportunidades para definir onde a tecnologia realmente gera valor.</p></article><article class="card"><span class="card-number">02 / PRODUTO</span><div class="icon" aria-hidden="true">◇</div><h3>Experiências digitais</h3><p>Desenhamos interfaces claras e protótipos testáveis para transformar uma ideia em produto com direção.</p></article><article class="card"><span class="card-number">03 / ENGENHARIA</span><div class="icon" aria-hidden="true">↗</div><h3>Sistemas e automação</h3><p>Construímos ferramentas confiáveis para conectar dados, diminuir tarefas repetitivas e dar escala ao trabalho.</p></article></div></div></section>
-    <section id="metodo"><div class="container method-grid"><div class="method-copy"><span class="eyebrow">Nosso método</span><h2>Menos suposições. Mais aprendizado.</h2><p class="lead">Trabalhamos de perto com quem conhece o contexto para transformar incerteza em decisões bem fundamentadas.</p></div><div class="steps"><article class="step"><span>01</span><div><h3>Entender o contexto</h3><p>Escutamos as pessoas, observamos o fluxo e reunimos as evidências que importam.</p></div><i>↘</i></article><article class="step"><span>02</span><div><h3>Definir o foco</h3><p>Priorizamos o problema de maior impacto e alinhamos o resultado esperado.</p></div><i>↘</i></article><article class="step"><span>03</span><div><h3>Criar e validar</h3><p>Prototipamos respostas simples, testamos cedo e ajustamos com rapidez.</p></div><i>↘</i></article><article class="step"><span>04</span><div><h3>Entregar e evoluir</h3><p>Implementamos com qualidade e deixamos uma base pronta para o próximo ciclo.</p></div><i>✓</i></article></div></div></section>
-    <section class="team" id="equipe"><div class="container"><div class="section-head"><div><span class="eyebrow">Quem constrói</span><h2>Perspectivas diferentes. Uma entrega conectada.</h2></div><p>Um time multidisciplinar que combina pensamento analítico, design e desenvolvimento para fazer a tecnologia acontecer.</p></div><div class="people"><article class="person"><div class="avatar">D</div><h3>Deivid</h3><span class="role">Back-end &amp; estratégia</span><p>.NET, arquitetura de sistemas, resolução de problemas e visão de produto.</p></article><article class="person"><div class="avatar">T</div><h3>Thaís</h3><span class="role">Front-end &amp; UX/UI</span><p>Interfaces, experiência do usuário, Figma, Bootstrap, C# e .NET.</p></article><article class="person"><div class="avatar">G</div><h3>Gustavo</h3><span class="role">Desenvolvimento</span><p>Desenvolvimento front-end e back-end com foco em software funcional.</p></article><article class="person"><div class="avatar">A</div><h3>Anny</h3><span class="role">Design &amp; web</span><p>Design para web, Figma e construção de interfaces em HTML.</p></article></div></div></section>
-    <section class="contact" id="contato"><div class="container contact-grid"><div class="contact-copy"><span class="eyebrow">Próximo passo</span><h2>Vamos dar forma ao seu próximo desafio.</h2><p>Conte o que está travando sua operação. A mensagem será preparada no seu WhatsApp ou e-mail — nenhum dado fica armazenado neste site.</p><div class="contact-links"><a href="mailto:deividsa@gmail.com">✦ deividsa@gmail.com</a><a href="https://wa.me/551193233534?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Fatec%20Solutions." target="_blank" rel="noopener noreferrer">✦ WhatsApp: +55 11 93233-534</a></div></div><form class="form" id="contact-form"><div class="field"><label for="name">Seu nome</label><input id="name" name="name" required autocomplete="name" placeholder="Como podemos chamar você?"></div><div class="field"><label for="company">Empresa</label><input id="company" name="company" autocomplete="organization" placeholder="Nome da empresa"></div><div class="field full"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="voce@empresa.com"></div><div class="field full"><label for="message">O desafio</label><textarea id="message" name="message" required placeholder="Conte um pouco sobre o que sua equipe precisa resolver"></textarea></div><div class="form-actions"><button class="button" type="submit" data-channel="whatsapp">Enviar pelo WhatsApp <span aria-hidden="true">→</span></button><button class="button secondary" type="submit" data-channel="email">Enviar por e-mail</button></div></form></div></section>
+
+<!-- ===================== BARRA DE ACESSIBILIDADE (sempre visível) ===================== -->
+<div class="a11y-bar" role="toolbar" aria-label="Controles de acessibilidade">
+  <span class="a11y-brand">TechTrace 360</span>
+  <span class="a11y-spacer"></span>
+  <span class="label">Acessibilidade:</span>
+  <button class="a11y-btn" id="btn-theme" aria-pressed="false" type="button">🌙 <span id="theme-label">Tema Escuro</span></button>
+  <button class="a11y-btn" id="btn-contrast" aria-pressed="false" type="button">◐ Alto Contraste</button>
+  <button class="a11y-btn" id="btn-font-down" type="button">A−</button>
+  <button class="a11y-btn" id="btn-font-up" type="button">A+</button>
+</div>
+
+<!-- ===================== TELA 0: LANDING PAGE FATEC SOLUTIONS ===================== -->
+<div id="screen-landing">
+  <nav class="landing-nav">
+    <div class="container">
+      <div class="brand"><span class="brand-mark">F</span>FATEC SOLUTIONS</div>
+      <div class="landing-links">
+        <a href="#l-solucoes">Soluções</a>
+        <a href="#l-equipe">Equipe</a>
+        <a href="#l-produto">TechTrace 360</a>
+        <a href="sitemap.html">Mapa do Site</a>
+      </div>
+      <button class="cta-btn" onclick="showScreen('screen-login')">Área do Cliente →</button>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <span class="eyebrow">TECNOLOGIA APLICADA À INDÚSTRIA</span>
+    <h1>Da complexidade à próxima solução.</h1>
+    <p>Criamos produtos digitais, automações e experiências que transformam desafios operacionais em resultados claros para pessoas e negócios.</p>
+    <div class="actions">
+      <button class="cta-btn" onclick="showScreen('screen-login')">Acessar o Sistema →</button>
+      <button class="cta-btn ghost" onclick="document.getElementById('l-solucoes').scrollIntoView({behavior:'smooth'})">Como trabalhamos</button>
+    </div>
+  </header>
+
+  <section class="section container" id="l-solucoes">
+    <h2>O que fazemos</h2>
+    <p class="sub">Unimos visão de negócio e execução técnica para reduzir atrito, organizar informação e abrir espaço para crescer.</p>
+    <div class="card-grid">
+      <div class="info-card"><div class="ic">🧭</div><h3>Diagnóstico de processos</h3><p>Mapeamos rotinas e pontos de fricção para definir onde a tecnologia realmente gera valor.</p></div>
+      <div class="info-card"><div class="ic">🖥️</div><h3>Experiências digitais</h3><p>Desenhamos interfaces claras e protótipos testáveis para transformar uma ideia em produto.</p></div>
+      <div class="info-card"><div class="ic">⚙️</div><h3>Sistemas e automação</h3><p>Construímos ferramentas confiáveis para conectar dados e dar escala ao trabalho.</p></div>
+    </div>
+  </section>
+
+  <section class="section container" id="l-produto">
+    <div class="access-banner">
+      <div>
+        <h3>TechTrace 360 está no ar</h3>
+        <p>Rastreabilidade industrial inteligente para o chão de fábrica — Caso TechParts Industrial.</p>
+      </div>
+      <button class="cta-btn" onclick="showScreen('screen-login')">Acessar o Sistema →</button>
+    </div>
+  </section>
+
+  <section class="section container" id="l-equipe">
+    <h2>Quem constrói</h2>
+    <p class="sub">Um time multidisciplinar que combina pensamento analítico, design e desenvolvimento.</p>
+    <div class="team-grid">
+      <div class="team-card"><div class="av">D</div><h3>Deivid</h3><span class="role">Back-end &amp; Estratégia</span><p>.NET, arquitetura de sistemas.</p></div>
+      <div class="team-card"><div class="av">T</div><h3>Thaís</h3><span class="role">Front-end &amp; UX/UI</span><p>Interfaces e experiência do usuário.</p></div>
+      <div class="team-card"><div class="av">G</div><h3>Gustavo</h3><span class="role">Desenvolvimento</span><p>Front-end e back-end.</p></div>
+      <div class="team-card"><div class="av">A</div><h3>Anny</h3><span class="role">Design &amp; Web</span><p>Design para web e Figma.</p></div>
+    </div>
+  </section>
+
+  <footer class="landing-footer">© 2026 Fatec Solutions · Protótipo de demonstração — TechTrace 360 · <a href="sitemap.html" style="color:var(--accent)">Mapa do Site</a> · <a href="manual/Manual-do-Usuario-TechTrace360.pdf" style="color:var(--accent)">Manual do Usuário (PDF)</a></footer>
+</div>
+
+<!-- ===================== TELA 1: LOGIN (demonstrativo) ===================== -->
+<main id="screen-login" class="screen hidden">
+  <a href="#" class="back-link" onclick="showScreen('screen-landing'); return false;">← Voltar para o site</a>
+  <div class="login-head">
+    <span class="tag">PROTÓTIPO VISUAL · SOMENTE DEMONSTRAÇÃO</span>
+    <h1>Selecione um perfil para entrar</h1>
+    <p>5 perfis estão mapeados no sistema. Nesta demonstração, 3 estão com acesso ativo.</p>
+  </div>
+
+  <div class="role-grid">
+    <button class="role-card enabled" onclick="login('admin')">
+      <span class="icon">🛠️</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Administrador</h3>
+      <p>Painel completo: dashboard, apontamento, qualidade, rastreio e gestão.</p>
+    </button>
+
+    <button class="role-card enabled" onclick="login('operador')">
+      <span class="icon">⚙️</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Operador CNC</h3>
+      <p>Apontamento de produção na máquina, tela em modo tablet.</p>
+    </button>
+
+    <button class="role-card enabled" onclick="login('qualidade')">
+      <span class="icon">🔍</span>
+      <span class="role-badge on">✓ Acesso ativo</span>
+      <h3>Qualidade</h3>
+      <p>Checklist de homologação do lote com validação por toque.</p>
+    </button>
+
+    <div class="role-card disabled">
+      <span class="icon">📦</span>
+      <span class="role-badge off">Em breve</span>
+      <h3>Logística</h3>
+      <p>Liberação de expedição via leitura de QR Code.</p>
+    </div>
+
+    <div class="role-card disabled">
+      <span class="icon">📈</span>
+      <span class="role-badge off">Em breve</span>
+      <h3>Gestor / Diretoria</h3>
+      <p>Visão executiva dedicada (hoje disponível dentro do Administrador).</p>
+    </div>
+  </div>
+
+  <div class="demo-note">
+    ℹ️ Protótipo visual sem autenticação real — os cliques em "Administrador", "Operador CNC" e "Qualidade" abrem as telas completas. Os dados de lote criados no Operador aparecem automaticamente no Dashboard, Rastreio e Gestão do Administrador, e a homologação feita na Qualidade atualiza esse status em tempo real, simulando a integração entre os módulos.
+  </div>
+</main>
+
+<!-- ===================== TELA 2: OPERADOR CNC ===================== -->
+<div id="screen-operador" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">GM</div>
+      <div><div class="name">Gustavo Mendes</div><div class="role">Operador CNC · Turno 1</div></div>
+    </div>
+    <button class="logout-btn" id="op-exit-btn" onclick="exitScreen()">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <div class="progress" id="op-progress">
+      <div class="dot active" data-step="1"></div>
+      <div class="dot" data-step="2"></div>
+      <div class="dot" data-step="3"></div>
+      <div class="dot" data-step="4"></div>
+    </div>
+
+    <div class="step-box" id="op-step-1">
+      <h2>1. Escolha a máquina</h2>
+      <p class="hint">Toque na máquina que você está operando agora.</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-value="Mazak-04" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Mazak-04</b><span>Centro de usinagem 5 eixos</span></button>
+        <button class="choice-card" data-value="Romi-02" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Romi-02</b><span>Torno CNC</span></button>
+        <button class="choice-card" data-value="Haas-01" onclick="selectCard(this,'maquina')"><span class="em">🏭</span><b>CNC Haas-01</b><span>Fresadora</span></button>
+      </div>
+      <div class="wizard-nav"><span></span><button class="btn btn-primary" onclick="opNext(1)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-2">
+      <h2>2. Escolha a peça</h2>
+      <p class="hint">Toque no componente que está sendo produzido.</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-value="Eixo Transmissão T-4" onclick="selectCard(this,'peca')"><span class="em">⚙️</span><b>Eixo Transmissão T-4</b><span>Automotivo</span></button>
+        <button class="choice-card" data-value="Flange Hidráulica" onclick="selectCard(this,'peca')"><span class="em">🔩</span><b>Flange Hidráulica</b><span>Alta pressão</span></button>
+        <button class="choice-card" data-value="Coroa Dentada Z-34" onclick="selectCard(this,'peca')"><span class="em">⚙️</span><b>Coroa Dentada Z-34</b><span>Redução</span></button>
+      </div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(2)">← Voltar</button><button class="btn btn-primary" onclick="opNext(2)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-3">
+      <h2>3. Quantidade produzida</h2>
+      <p class="hint">Use os botões grandes para ajustar — não é necessário digitar.</p>
+      <div class="qty-row"><button class="qty-btn" onclick="qtyChange(-10)">−</button><div class="qty-value" id="qty-display">500</div><button class="qty-btn" onclick="qtyChange(10)">+</button></div>
+      <div class="qty-label">Peças boas nesta leva</div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(3)">← Voltar</button><button class="btn btn-primary" onclick="opNext(3)">Próximo →</button></div>
+    </div>
+
+    <div class="step-box hidden" id="op-step-4">
+      <h2>4. Confirmar apontamento</h2>
+      <p class="hint">Confira os dados e gere a etiqueta com QR Code.</p>
+      <div class="choice-grid" style="grid-template-columns:1fr">
+        <div class="choice-card selected" style="cursor:default">
+          <span class="em">📋</span>
+          <b id="resumo-maquina">Máquina: —</b>
+          <span id="resumo-peca">Peça: —</span>
+          <span id="resumo-qtd">Quantidade: —</span>
+        </div>
+      </div>
+      <div class="wizard-nav"><button class="btn btn-ghost" onclick="opBack(4)">← Voltar</button><button class="btn btn-success" onclick="gerarEtiqueta()">🏷️ Gerar Etiqueta QR Code</button></div>
+    </div>
+
+    <div class="result-card hidden" id="op-resultado">
+      <span class="ok-badge">✓ Lote cadastrado com sucesso</span>
+      <div class="qr-box"><svg width="80" height="80" viewBox="0 0 100 100" fill="#0B2545"><path d="M10 10h30v30h-30zM15 15v20h20v-20zM22 22h6v6h-6zM60 10h30v30h-30zM65 15v20h20v-20zM72 22h6v6h-6zM10 60h30v30h-30zM15 65v20h20v-20zM22 72h6v6h-6zM60 60h10v10h-10zM80 60h10v10h-10zM70 70h10v10h-10zM60 80h10v10h-10zM80 80h10v10h-10zM45 10h10v80h-10zM10 45h80v10h-80z"/></svg></div>
+      <div class="result-lote" id="result-lote-id">—</div>
+      <div class="result-desc" id="result-lote-desc">—</div>
+      <p style="color:var(--muted); font-size:.85em; margin-top:.6rem">Este lote já está disponível no Dashboard, Rastreio e Gestão do Administrador com status "Em inspeção".</p>
+      <div class="wizard-nav" style="justify-content:center"><button class="btn btn-primary" onclick="novoApontamento()">+ Novo Apontamento</button></div>
+    </div>
   </main>
-  <details class="accessibility"><summary>Acessibilidade</summary><div><button type="button" data-size="up">Aumentar texto</button><button type="button" data-size="down">Diminuir texto</button><button type="button" data-toggle="high-contrast" aria-pressed="false">Alto contraste</button><button type="button" data-toggle="reduce-motion" aria-pressed="false">Reduzir movimento</button></div></details>
-  <footer><div class="container"><span>© 2026 Fatec Solutions</span><span>Tecnologia que move operações.</span></div></footer>
-  <script>
-    const menu=document.querySelector('.menu'),links=document.querySelector('.nav-links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'Fechar':'Menu'});links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu'}));let scale=1;document.querySelectorAll('[data-size]').forEach(button=>button.addEventListener('click',()=>{scale=Math.min(1.25,Math.max(.9,scale+(button.dataset.size==='up'?.05:-.05)));document.documentElement.style.setProperty('--scale',scale)}));document.querySelectorAll('[data-toggle]').forEach(button=>button.addEventListener('click',()=>{const active=document.body.classList.toggle(button.dataset.toggle);button.setAttribute('aria-pressed',active)}));document.getElementById('contact-form').addEventListener('submit',event=>{event.preventDefault();const data=new FormData(event.currentTarget),message=`Nome: ${data.get('name')}\nEmpresa: ${data.get('company')||'Não informado'}\nE-mail: ${data.get('email')}\n\nDesafio:\n${data.get('message')}`;if(event.submitter.dataset.channel==='email'){window.location.href=`mailto:deividsa@gmail.com?subject=${encodeURIComponent('Contato pelo site Fatec Solutions')}&body=${encodeURIComponent(message)}`}else{window.open(`https://wa.me/551193233534?text=${encodeURIComponent(`Olá, Fatec Solutions!\n\n${message}`)}`,'_blank','noopener,noreferrer')}});
-  </script>
+</div>
+
+<!-- ===================== TELA 3: QUALIDADE ===================== -->
+<div id="screen-qualidade" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">MA</div>
+      <div><div class="name">Mariana Albuquerque</div><div class="role">Controle de Qualidade</div></div>
+    </div>
+    <button class="logout-btn" id="qual-exit-btn" onclick="exitScreen()">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <h2 style="margin-bottom:.3rem">Checklist de homologação</h2>
+    <p class="hint" style="color:var(--muted); margin-bottom:1rem">Toque em Conforme ou Não Conforme para cada item.</p>
+
+    <div class="lote-select">
+      <span style="font-weight:800">Lote em análise:</span>
+      <select id="qual-lote-picker" onchange="onLotePickerChange()"></select>
+    </div>
+
+    <div class="check-item">
+      <div class="title">Diâmetro externo da haste</div>
+      <div class="spec">Especificado: 45.00 mm ± 0.02 mm</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q1')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q1')">✕ Não conforme</button>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="title">Rugosidade superficial (Ra)</div>
+      <div class="spec">Especificado: máximo 0.80 µm</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q2')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q2')">✕ Não conforme</button>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="title">Dureza Rockwell C</div>
+      <div class="spec">Especificado: 58 a 62 HRC</div>
+      <div class="check-toggle">
+        <button class="tgl ok active" onclick="setCheck(this,'q3')">✓ Conforme</button>
+        <button class="tgl bad" onclick="setCheck(this,'q3')">✕ Não conforme</button>
+      </div>
+    </div>
+
+    <div class="qual-footer">
+      <div>Assinatura digital: <strong>Mariana Albuquerque</strong></div>
+      <div style="display:flex; gap:.8rem">
+        <button class="btn btn-ghost" onclick="reprovarLote()">🚫 Abrir RNC</button>
+        <button class="btn btn-success" id="btn-homologar" onclick="homologarLote()">✓ Homologar Lote</button>
+      </div>
+    </div>
+    <p id="qual-empty-hint" class="empty-hint hidden">Nenhum lote pendente de inspeção no momento. Volte ao Operador CNC para gerar um novo apontamento.</p>
+  </main>
+</div>
+
+<!-- ===================== TELA 4: ADMINISTRADOR ===================== -->
+<div id="screen-admin" class="hidden">
+  <header class="app-header">
+    <div class="who">
+      <div class="avatar">AD</div>
+      <div><div class="name">Administrador</div><div class="role">Acesso completo ao sistema</div></div>
+    </div>
+    <button class="logout-btn" onclick="showScreen('screen-login')">← Sair</button>
+  </header>
+
+  <main class="screen">
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="dashboard" onclick="setAdminTab('dashboard')">📊 Dashboard</button>
+      <button class="admin-tab" data-tab="rastreio" onclick="setAdminTab('rastreio')">📦 Rastreio</button>
+      <button class="admin-tab" data-tab="gestao" onclick="setAdminTab('gestao')">📈 Gestão</button>
+      <button class="admin-tab launch" onclick="openOperador('admin')">⚙️ Apontamento CNC →</button>
+      <button class="admin-tab launch" onclick="openQualidade('admin')">🔍 Inspeção Qualidade →</button>
+    </div>
+
+    <!-- Aba Dashboard -->
+    <section id="admin-tab-dashboard">
+      <div class="kpi-grid">
+        <div class="kpi"><div class="lbl">Total de lotes</div><div class="val" id="kpi-total">0</div></div>
+        <div class="kpi"><div class="lbl">Liberados</div><div class="val" id="kpi-liberados">0</div></div>
+        <div class="kpi"><div class="lbl">Em inspeção</div><div class="val" id="kpi-inspecao">0</div></div>
+        <div class="kpi"><div class="lbl">Bloqueados (RNC)</div><div class="val" id="kpi-bloqueados">0</div></div>
+      </div>
+      <div class="table-card">
+        <table class="lotes">
+          <thead><tr><th>Lote</th><th>Peça</th><th>Máquina</th><th>Qtd</th><th>Status</th></tr></thead>
+          <tbody id="admin-lotes-tbody"></tbody>
+        </table>
+        <p class="empty-hint hidden" id="admin-lotes-empty">Nenhum lote registrado ainda. Abra "Apontamento CNC" para criar o primeiro.</p>
+      </div>
+    </section>
+
+    <!-- Aba Rastreio -->
+    <section id="admin-tab-rastreio" class="hidden">
+      <div class="lote-select">
+        <span style="font-weight:800">Selecionar lote:</span>
+        <select id="rastreio-picker" onchange="renderRastreio()"></select>
+      </div>
+      <div class="table-card" id="rastreio-box">
+        <p class="empty-hint" id="rastreio-empty">Nenhum lote registrado ainda.</p>
+        <div class="timeline hidden" id="rastreio-timeline"></div>
+      </div>
+    </section>
+
+    <!-- Aba Gestão -->
+    <section id="admin-tab-gestao" class="hidden">
+      <div class="kpi-grid">
+        <div class="kpi"><div class="lbl">Peças em lotes liberados</div><div class="val" id="gestao-pecas-liberadas">0</div></div>
+        <div class="kpi"><div class="lbl">Taxa de conformidade</div><div class="val" id="gestao-taxa">—</div></div>
+        <div class="kpi"><div class="lbl">Lotes com RNC aberta</div><div class="val" id="gestao-rnc">0</div></div>
+      </div>
+      <div class="table-card">
+        <p style="margin:0; color:var(--muted)">Indicadores calculados em tempo real a partir dos lotes registrados nesta sessão de demonstração (Operador CNC → Qualidade → Administrador).</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/accessibility.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/operador.js"></script>
+<script src="js/qualidade.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

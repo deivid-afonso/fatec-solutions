@@ -11,13 +11,10 @@
 <p align="center">
  <a href="#-descrição-do-entregável">Descrição do Entregável</a> •
  <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-sistema-techtrace-360">Sistema TechTrace 360</a> •
- <a href="#-estrutura-do-projeto">Estrutura</a> •
- <a href="#-como-executar-o-projeto">Como executar</a> •
- <a href="#-acessibilidade">Acessibilidade</a> •
- <a href="#-publicação-deploy">Publicação</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> •
- <a href="#-autores">Autores</a> •
+ <a href="#-autor">Autor</a> •
  <a href="#-licença">Licença</a>
 </p>
 
@@ -208,36 +205,34 @@ O workflow `.github/workflows/jekyll-docker.yml` já existente no repositório �
 
 ## 🦸 Autores
 
-<a href="https://br.linkedin.com/in/thaisferreirademoura2004">
-<a href="https://www.linkedin.com/in/gustavo-rss?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-<a href="https://www.linkedin.com/in/anny-d-719892274?utm_source=share_via&utm_content=profile&utm_medium=member_android">
-<a href="https://www.linkedin.com/in/deivid-da-silva-afonso-dev/">
+💼 Clique no nome dos integrantes para ser direcionado ao nosso LinkedIn.
 
-<a href="#">
+<a href="https://www.linkedin.com/in/anny-d-719892274/" target="_blank">
 
 <strong>Anny Michelle Gomes Diniz Alves</strong>
 
 </a>
 
-<a href="#">
+<a href="https://www.linkedin.com/in/deivid-da-silva-afonso-dev/" target="_blank">
 
-<strong>David Afonso</strong>
+<strong>Deivid Afonso</strong>
 
 </a>
 
-<a href="#">
+<a href="https://www.linkedin.com/in/gustavo-rss/" target="_blank">
 
 <strong>Gustavo Robson</strong>
 
 </a>
 
-<a href="https://br.linkedin.com/in/thaisferreirademoura2004">
+<a href="https://br.linkedin.com/in/thaisferreirademoura2004" target="_blank">
 
 <strong>Thais Ferreira de Moura</strong>
 
 </a>
 
 ---
+
 
 <p align="center">
   Desenvolvido pela equipe <strong>Fatec Solutions</strong> durante o
@@ -246,7 +241,6 @@ O workflow `.github/workflows/jekyll-docker.yml` já existente no repositório �
 
 <br />
 
-[![Gmail Badge](https://img.shields.io/badge/-thaisluzferreira2004@gmail.com-c14438?style=flat-square\&logo=Gmail\&logoColor=white)](mailto:thaisluzferreira2004@gmail.com)
 
 ---
 
@@ -261,3 +255,4 @@ Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
 <p align="center">
   Desenvolvido durante o <strong>Desafio de Ideias SENAI + FATEC Diadema</strong> 🚀
 </p>
+

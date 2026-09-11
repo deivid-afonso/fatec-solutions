@@ -1,0 +1,61 @@
+/* ============================================================
+   base.css — TechTrace 360 / Fatec Solutions
+   Variáveis de design system (cores, tipografia), reset e
+   estrutura de layout genérica (.screen, .container).
+   Carregar SEMPRE primeiro — os outros arquivos dependem
+   das variáveis --bg, --text, --primary etc. definidas aqui.
+   ============================================================ */
+
+/* ============================================================
+   TOKENS — Design System TechTrace 360 / Fatec Solutions
+   ============================================================ */
+:root{
+  --scale:1; --radius:14px;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-head:'Montserrat',sans-serif;
+}
+:root, .theme-light{
+  --bg:#F8F9FA; --surface:#FFFFFF; --surface-2:#EEF2F6;
+  --text:#0B2545; --muted:#4B5C78; --border:#D7DEE8;
+  --primary:#134074; --primary-ink:#FFFFFF;
+  --accent:#00B4D8;
+  --success:#0E9F6E; --success-bg:#DCFCE7; --success-ink:#065F32;
+  --danger:#DC2626; --danger-bg:#FEE2E2; --danger-ink:#7F1D1D;
+  --warning:#B45309; --warning-bg:#FEF3C7; --warning-ink:#78350F;
+  --shadow:0 10px 30px rgba(11,37,69,.08);
+}
+.theme-dark{
+  --bg:#0B1524; --surface:#122036; --surface-2:#0E1A2C;
+  --text:#F3F6FB; --muted:#A9B6CC; --border:#233553;
+  --primary:#4D8FD6; --primary-ink:#06111F;
+  --accent:#37D6EE;
+  --success:#34D399; --success-bg:#0F2E22; --success-ink:#9CF3D1;
+  --danger:#F87171; --danger-bg:#3A1414; --danger-ink:#FFC9C9;
+  --warning:#FBBF24; --warning-bg:#3A2A0A; --warning-ink:#FFE29A;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+}
+.contrast-high{
+  --bg:#000; --surface:#000; --surface-2:#000;
+  --text:#FFF; --muted:#FFF; --border:#FFF;
+  --primary:#FFEB00; --primary-ink:#000; --accent:#FFEB00;
+  --success:#00FF66; --success-bg:#000; --success-ink:#00FF66;
+  --danger:#FF5C5C; --danger-bg:#000; --danger-ink:#FF5C5C;
+  --warning:#FFEB00; --warning-bg:#000; --warning-ink:#FFEB00;
+  --shadow:none;
+}
+.contrast-high *{ border-color:#FFF !important }
+.contrast-high .btn,.contrast-high .role-card,.contrast-high .step-box,.contrast-high .kpi,.contrast-high .choice-card{ border-width:3px !important }
+
+*{box-sizing:border-box}
+html{font-size:calc(18px * var(--scale))}
+body{margin:0; min-height:100vh; background:var(--bg); color:var(--text); font-family:var(--font-body); line-height:1.55; transition:background .2s,color .2s}
+h1,h2,h3{font-family:var(--font-head); margin:0; letter-spacing:-.01em}
+button{font:inherit; cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+.hidden{display:none !important}
+
+
+/* ---------- Layout geral ---------- */
+.screen{max-width:1100px; margin:0 auto; padding:1.5rem 1rem 3rem}
+.container{max-width:1100px; margin:0 auto; padding:0 1rem}

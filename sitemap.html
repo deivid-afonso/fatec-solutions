@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Mapa do Site — TechTrace 360</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sitemap.css">
+</head>
+<body>
+
+<div class="a11y-bar" role="toolbar" aria-label="Controles de acessibilidade">
+  <span class="a11y-brand">TechTrace 360</span>
+  <span class="a11y-spacer"></span>
+  <span class="label">Acessibilidade:</span>
+  <button class="a11y-btn" id="btn-theme" aria-pressed="false" type="button">🌙 <span id="theme-label">Tema Escuro</span></button>
+  <button class="a11y-btn" id="btn-contrast" aria-pressed="false" type="button">◐ Alto Contraste</button>
+  <button class="a11y-btn" id="btn-font-down" type="button">A−</button>
+  <button class="a11y-btn" id="btn-font-up" type="button">A+</button>
+</div>
+
+<main class="screen">
+  <div class="sm-head">
+    <span class="tag">DOCUMENTAÇÃO DO PROJETO</span>
+    <h1>Mapa do Site</h1>
+    <p>Estrutura completa do TechTrace 360 depois da refatoração. Alterne entre ver a hierarquia de páginas ou o que cada perfil de acesso consegue enxergar.</p>
+  </div>
+
+  <div class="sm-toggle" role="tablist" aria-label="Alternar visualização do mapa do site">
+    <button data-view="paginas" class="active" onclick="setSitemapView('paginas')">🗂️ Por página</button>
+    <button data-view="perfis" onclick="setSitemapView('perfis')">👤 Por perfil</button>
+  </div>
+
+  <div class="sm-tree" id="sm-view-paginas">
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🏠</span><h3>Homepage institucional</h3><span class="path">index.html</span></div>
+      <p class="desc">Página da Fatec Solutions — hero, soluções, equipe e ponto de entrada para a Área do Cliente.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>#solucoes</b><span>— o que a Fatec Solutions faz</span></div>
+        <div class="sm-child"><b>#produto</b><span>— banner de acesso ao TechTrace 360</span></div>
+        <div class="sm-child"><b>#equipe</b><span>— quem constrói o produto</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🔐</span><h3>Login / Seleção de perfil</h3><span class="path">index.html → tela de login</span></div>
+      <p class="desc">Ponto único de entrada para os 5 perfis mapeados no sistema.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>Administrador</b><span>— acesso completo</span><span class="sm-badge on">Ativo</span></div>
+        <div class="sm-child"><b>Operador CNC</b><span>— apontamento de produção</span><span class="sm-badge on">Ativo</span></div>
+        <div class="sm-child"><b>Qualidade</b><span>— checklist de homologação</span><span class="sm-badge on">Ativo</span></div>
+        <div class="sm-child"><b>Logística</b><span>— liberação de expedição</span><span class="sm-badge off">Em breve</span></div>
+        <div class="sm-child"><b>Gestor / Diretoria</b><span>— visão executiva dedicada</span><span class="sm-badge off">Coberta pelo Admin</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">⚙️</span><h3>Operador CNC</h3><span class="path">index.html → tela Operador</span></div>
+      <p class="desc">Wizard de apontamento em 4 passos, sem digitação: máquina → peça → quantidade → confirmação com etiqueta QR Code.</p>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🔍</span><h3>Qualidade</h3><span class="path">index.html → tela Qualidade</span></div>
+      <p class="desc">Checklist de homologação por toque, com seleção do lote pendente e ação de Homologar ou Abrir RNC.</p>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🛠️</span><h3>Administrador</h3><span class="path">index.html → tela Admin</span></div>
+      <p class="desc">Painel único com três sub-abas internas, mais atalhos para as telas completas de Operador e Qualidade.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>📊 Dashboard</b><span>— KPIs e tabela de todos os lotes</span></div>
+        <div class="sm-child"><b>📦 Rastreio</b><span>— linha do tempo por lote</span></div>
+        <div class="sm-child"><b>📈 Gestão</b><span>— indicadores agregados para visão executiva</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🗺️</span><h3>Mapa do Site</h3><span class="path">sitemap.html</span></div>
+      <p class="desc">Esta página — documentação viva da estrutura do produto, com botões de acessibilidade como em qualquer outra tela.</p>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">📡</span><h3>Protótipo IoT</h3><span class="path">iot-prototype.html <span class="sm-badge off">arquivo separado</span></span></div>
+      <p class="desc">Protótipo de conectividade de sensores, mantido fora desta refatoração imediata — segue de pé como referência técnica independente.</p>
+    </div>
+  </div>
+
+  <div class="sm-tree hidden" id="sm-view-perfis">
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🛠️</span><h3>Administrador</h3><span class="sm-badge on">Acesso ativo</span></div>
+      <p class="desc">Único perfil com acesso a tudo nesta demonstração.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>Dashboard</b><span>— visão geral de todos os lotes</span></div>
+        <div class="sm-child"><b>Rastreio</b><span>— histórico completo por lote</span></div>
+        <div class="sm-child"><b>Gestão</b><span>— indicadores executivos</span></div>
+        <div class="sm-child"><b>Apontamento CNC</b><span>— atalho para a tela do Operador</span></div>
+        <div class="sm-child"><b>Inspeção Qualidade</b><span>— atalho para a tela da Qualidade</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">⚙️</span><h3>Operador CNC</h3><span class="sm-badge on">Acesso ativo</span></div>
+      <p class="desc">Vê apenas a própria tela de apontamento — nenhum outro módulo, para reduzir ruído no chão de fábrica.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>Apontamento CNC</b><span>— único módulo visível</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">🔍</span><h3>Qualidade</h3><span class="sm-badge on">Acesso ativo</span></div>
+      <p class="desc">Vê apenas a própria tela de checklist — mesma lógica de foco do Operador.</p>
+      <div class="sm-children">
+        <div class="sm-child"><b>Checklist de homologação</b><span>— único módulo visível</span></div>
+      </div>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">📦</span><h3>Logística</h3><span class="sm-badge off">Em breve</span></div>
+      <p class="desc">Planejado para ver apenas a leitura de QR Code e liberação de expedição — ainda não implementado nesta demonstração.</p>
+    </div>
+
+    <div class="sm-node">
+      <div class="row"><span class="em">📈</span><h3>Gestor / Diretoria</h3><span class="sm-badge off">Coberto pelo Admin</span></div>
+      <p class="desc">A visão executiva planejada para este perfil já existe hoje dentro da aba Gestão do Administrador.</p>
+    </div>
+  </div>
+</main>
+
+<script src="js/accessibility.js"></script>
+<script src="js/sitemap.js"></script>
+</body>
+</html>
